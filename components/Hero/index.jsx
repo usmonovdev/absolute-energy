@@ -1,50 +1,55 @@
 import Image from "next/image";
-import "./styles.module.css";
 import { Statistics } from "..";
+import { ContainerLayout } from "@/layouts";
+import { motion } from "framer-motion";
+import "./styles.module.css";
 
 const index = () => {
   return (
-    <div className="bg-dark text-white w-full top-0 z-[-1]">
-      <div className="h-screen max-h-[700px] flex flex-col justify-center">
-        <div className="w-full h-[80%] flex flex-col items-center justify-center gap-2 text-center">
-          <h3 className="text-small uppercase text-gradient font-bold mb-1">Services</h3>
-          <h1 className="text-big leading-none font-trap_black uppercase">
-            Absolute Energy
-          </h1>
-          <h3 className="text-small uppercase">СЕРВИС МЕЖДУНАРОДНОГО КЛАССА</h3>
-        </div>
-
-        {/* <div className="absolute top-0 w-full">
-          <svg
-            width="100%"
-            height="100%"
-            viewBox="0 0 1000 1000"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            overflow="auto"
-            shape-rendering="auto"
-            // fill="#ffffff"
+    <>
+      <div className="bg-dark text-white w-full top-0 z-[-1] relative">
+        <div className="h-[700px] flex flex-col justify-center">
+          <div className="bg-cube w-full h-full absolute z-[-1]"></div>
+          <motion.div
+            initial={{ y: 50 }}
+            whileInView={{ y: 0 }}
+            className="w-full h-[80%] flex flex-col items-center justify-center gap-2 text-center"
           >
-            <defs>
-              <path
-                id="wavepath"
-                d="M 0 2000 0 500 Q 145 335 290 500 t 290 0 290 0 290 0 290 0 290 0  v1000 z"
-              />
-              <path id="motionpath" d="M -580 0 0 0" />
-            </defs>
-            <g>
-              <use xlinkHref="#wavepath" y="125" fill="#000">
-                <animateMotion dur="5s" repeatCount="indefinite">
-                  <mpath xlinkHref="#motionpath" />
-                </animateMotion>
-              </use>
-            </g>
-          </svg>
-        </div> */}
-        {/* <Image src={'/images/generator.png'} width={500} height={500} alt="generator"/> */}
-        <Statistics />
+            <h3 className="text-small uppercase text-gradient font-bold mb-1">
+              Services
+            </h3>
+            <h1 className="text-big leading-none font-trap_black uppercase">
+              Absolute Energy
+            </h1>
+            <h3 className="text-small uppercase">
+              СЕРВИС МЕЖДУНАРОДНОГО КЛАССА
+            </h3>
+          </motion.div>
+          <Statistics />
+        </div>
+        <div className="absolute bottom-0 w-full z-[800] flex flex-row sm:justify-between justify-center">
+          <div className="absolute bottom-0 pointer-events-none bg-gradient-to-t from-gray-900 w-full h-[300px] z-[1100]"></div>
+          <ContainerLayout
+            className={"flex flex-row sm:justify-between justify-center w-full"}
+          >
+            <Image
+              src={"/images/generator.png"}
+              alt="generator"
+              width={500}
+              height={500}
+              className="z-[1000] min-[1200px]:w-[350px] min-[992px]:w-[300px] w-[250px] sm:mb-4 mb-20 md:ml-10 ml-5 grayscale hover:scale-125"
+            />
+            <Image
+              src={"/images/alimator.png"}
+              alt="alimator"
+              width={500}
+              height={500}
+              className="z-[1000] min-[1200px]:w-[350px] min-[992px]:w-[300px] w-[250px] mb-4 md:mr-10 ml-5 grayscale hover:scale-125 sm:block hidden"
+            />
+          </ContainerLayout>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 

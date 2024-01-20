@@ -21,7 +21,7 @@ const Mobile = ({ open, handleClick }) => {
                 stiffness: 500,
                 duration: 0.2,
               }}
-              className={`md:hidden flex flex-col items-center fixed top-0 right-0 transition-all duration-300 sm:w-full w-[90%] max-w-[400px] h-screen bg-white shadow-xl`}
+              className={`md:hidden flex flex-col items-center fixed top-0 right-0 sm:w-full w-[90%] max-w-[400px] h-screen bg-white shadow-xl`}
             >
               <div className="w-full px-3 py-5 flex flex-row gap-2">
                 <Xmark onClick={handleClick} className="cursor-pointer" />

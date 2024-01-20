@@ -1,20 +1,14 @@
 import { statistics } from "@/data";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
 import "./styles.module.css";
 
 const index = () => {
-  const ref = useRef(null);
-  const isInView = useInView(ref);
-
   return (
-    <div className="h-[20%] z-[999]">
+    <div className="h-[20%] z-[900]">
       <motion.ul
-        ref={ref}
         initial={{ scale: 0 }}
-        whileTap={{ scale: 0.9 }}
-        whileHover={{ scale: 1.05 }}
         whileInView={{ scale: 1 }}
+        viewport={{ once: true }}
         transition={{ type: "spring" }}
         className={`text-dark flex sm:flex-row flex-col items-center justify-center gap-8 w-fit sm:min-w-[450px] min-w-[300px] max-w-[700px] border border-solid mx-auto p-4 rounded-xl bg-white  cursor-pointer shadow-sm`}
       >

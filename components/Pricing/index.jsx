@@ -24,7 +24,7 @@ const index = () => {
               className={`text-center px-5 py-9 rounded-[16px] max-w-[700px] mx-auto ${
                 price.isSupport
                   ? "text-white bg-linear-gradient"
-                  : "text-dark min-[1100px]:bg-transparent bg-gray-50"
+                  : "text-dark border bg-gray-50"
               }`}
             >
               <div className="flex flex-col gap-2">

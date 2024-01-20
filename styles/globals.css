@@ -45,9 +45,9 @@
   font-style: normal;
 }
 
-body {
-  /* background-image: linear-gradient(90deg, #fafafa 0.1rem, transparent 0.1rem); */
-  /* background-size: 6em; */
+.bg-cube {
+  background-image: linear-gradient(90deg, #fafafa0a 0.1rem, transparent 0.1rem);
+  background-size: 5rem;
 }
 
 @layer base {
@@ -66,18 +66,18 @@ body {
   }
 
   .custom-rounded {
-    @apply rounded-[40px]
+    @apply rounded-[40px];
   }
 
   .text-big {
-    @apply md:text-[48px] text-[40px]
+    @apply md:text-[48px] text-[40px];
   }
 
   .text-small {
-    @apply md:text-[16px] text-[14px]
+    @apply md:text-[16px] text-[14px];
   }
 
   .text-medium {
-    @apply md:text-[24px] text-[20px]
+    @apply md:text-[24px] text-[20px];
   }
 }
