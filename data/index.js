@@ -160,3 +160,69 @@ export const services = [
     icon: ServiceIcon6,
   },
 ];
+
+export const pricing = [
+  {
+    id: 1,
+    name: "Service plan #1",
+    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    isSupport: false,
+    buttonText: "Learn more",
+    features: [
+      {
+        id: 1,
+        title: "Advantages #1"
+      },
+      {
+        id: 2,
+        title: "Advantages #2"
+      },
+      {
+        id: 3,
+        title: "Advantages #3"
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "Service plan #2",
+    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    isSupport: true,
+    buttonText: "Learn more",
+    features: [
+      {
+        id: 1,
+        title: "Advantages #1"
+      },
+      {
+        id: 2,
+        title: "Advantages #2"
+      },
+      {
+        id: 3,
+        title: "Advantages #3"
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Service plan #3",
+    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    isSupport: false,
+    buttonText: "Find a Room",
+    features: [
+      {
+        id: 1,
+        title: "Advantages #1"
+      },
+      {
+        id: 2,
+        title: "Advantages #2"
+      },
+      {
+        id: 3,
+        title: "Advantages #3"
+      },
+    ]
+  }
+]

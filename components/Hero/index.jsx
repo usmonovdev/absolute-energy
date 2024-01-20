@@ -4,7 +4,7 @@ import { Statistics } from "..";
 
 const index = () => {
   return (
-    <div className="bg-[#212542] text-white w-full top-0 z-[-1]">
+    <div className="bg-dark text-white w-full top-0 z-[-1]">
       <div className="h-screen max-h-[700px] flex flex-col justify-center">
         <div className="w-full h-[80%] flex flex-col items-center justify-center gap-2 text-center">
           <h3 className="text-small uppercase text-gradient font-bold mb-1">Services</h3>
@@ -41,6 +41,7 @@ const index = () => {
             </g>
           </svg>
         </div> */}
+        {/* <Image src={'/images/generator.png'} width={500} height={500} alt="generator"/> */}
         <Statistics />
       </div>
     </div>

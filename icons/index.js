@@ -4,6 +4,7 @@ import ServiceIcon3 from "./ServiceIcon3"
 import ServiceIcon4 from "./ServiceIcon4"
 import ServiceIcon5 from "./ServiceIcon5"
 import ServiceIcon6 from "./ServiceIcon6"
+import Verify from "./Verify"
 
 export {
   ServiceIcon1,
@@ -12,4 +13,5 @@ export {
   ServiceIcon4,
   ServiceIcon5,
   ServiceIcon6,
+  Verify
 }

@@ -5,6 +5,9 @@ import CustomButton from './CustomButton'
 import Statistics from './Statistics'
 import About from './About'
 import Services from './Services'
+import Projects from './Projects'
+import Contact from './Contact'
+import Pricing from './Pricing'
 
 export {
   Navbar,
@@ -13,5 +16,8 @@ export {
   CustomButton,
   Statistics,
   About,
-  Services
+  Services,
+  Projects,
+  Contact,
+  Pricing
 }

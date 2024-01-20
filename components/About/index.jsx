@@ -2,6 +2,7 @@ import { ContainerLayout } from "@/layouts";
 import "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const index = () => {
   return (
@@ -83,13 +84,20 @@ const index = () => {
             </g>
           </svg>
 
-          <Image
-            src={"/images/workers-team.jpg"}
-            width={500}
-            height={500}
-            alt="workers team"
-            className="object-cover w-[300px] aspect-square rounded-full z-[10]"
-          />
+          <motion.div
+            initial={{ scale: 0 }}
+            viewport={{ once: true }}
+            whileInView={{ scale: 1 }}
+            transition={{ type: "spring" }}
+          >
+            <Image
+              src={"/images/workers-team.jpg"}
+              width={500}
+              height={500}
+              alt="workers team"
+              className="object-cover w-[300px] aspect-square rounded-full z-[10]"
+            />
+          </motion.div>
 
           {/* clircle gradient */}
           <svg

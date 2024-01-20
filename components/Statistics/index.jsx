@@ -11,11 +11,12 @@ const index = () => {
     <div className="h-[20%] z-[999]">
       <motion.ul
         ref={ref}
+        initial={{ scale: 0 }}
         whileTap={{ scale: 0.9 }}
         whileHover={{ scale: 1.05 }}
-        className={`text-dark flex sm:flex-row flex-col items-center justify-center gap-8 w-fit sm:min-w-[450px] min-w-[300px] max-w-[700px] border border-solid mx-auto p-4 rounded-xl bg-white  cursor-pointer shadow-sm ${
-          isInView ? "scale-100" : "scale-0"
-        } transition-transform duration-300`}
+        whileInView={{ scale: 1 }}
+        transition={{ type: "spring" }}
+        className={`text-dark flex sm:flex-row flex-col items-center justify-center gap-8 w-fit sm:min-w-[450px] min-w-[300px] max-w-[700px] border border-solid mx-auto p-4 rounded-xl bg-white  cursor-pointer shadow-sm`}
       >
         {statistics.map((stat) => {
           return (

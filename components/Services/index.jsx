@@ -1,8 +1,29 @@
 import { ContainerLayout } from "@/layouts";
 import "./styles.module.css";
 import { services } from "@/data";
+import { motion } from "framer-motion";
 
 const index = () => {
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
+
   return (
     <ContainerLayout className={"py-10"}>
       <div className="text-center flex items-center flex-col">
@@ -12,10 +33,20 @@ const index = () => {
           Основные направления
         </h1>
       </div>
-      <ul className="grid md:grid-cols-3 grid-cols-1 gap-3 mt-5">
+      <motion.ul
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-8"
+        variants={container}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+      >
         {services.map((service) => {
           return (
-            <li key={service.id} className="border p-3 rounded-[15px] hover:bg-[#f1f1f130] hover:border-main">
+            <motion.li
+              key={service.id}
+              variants={item}
+              className="border p-3 rounded-[15px] hover:bg-[#f1f1f130] hover:border-main transition-colors duration-300"
+            >
               <service.icon className={"mb-4 w-[64px] h-[64px]"} />
               <div className="flex flex-col gap-2">
                 <h1
@@ -28,10 +59,10 @@ const index = () => {
                   {service.desc}
                 </h3>
               </div>
-            </li>
+            </motion.li>
           );
         })}
-      </ul>
+      </motion.ul>
     </ContainerLayout>
   );
 };
