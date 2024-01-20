@@ -45,14 +45,39 @@
   font-style: normal;
 }
 
+body {
+  /* background-image: linear-gradient(90deg, #fafafa 0.1rem, transparent 0.1rem); */
+  /* background-size: 6em; */
+}
+
 @layer base {
   body {
-    @apply m-0 p-0 box-border overflow-x-hidden bg-white;
+    @apply m-0 p-0 box-border overflow-x-hidden;
   }
 }
 
 @layer components {
   .custom-container {
     @apply max-w-[1200px] mx-auto px-4;
+  }
+
+  .text-gradient {
+    @apply bg-linear-gradient bg-clip-text text-transparent;
+  }
+
+  .custom-rounded {
+    @apply rounded-[40px]
+  }
+
+  .text-big {
+    @apply md:text-[48px] text-[40px]
+  }
+
+  .text-small {
+    @apply md:text-[16px] text-[14px]
+  }
+
+  .text-medium {
+    @apply md:text-[24px] text-[20px]
   }
 }

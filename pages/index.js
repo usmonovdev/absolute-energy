@@ -1,12 +1,18 @@
-import { Lexend } from "next/font/google";
-const lexend = Lexend({ subsets: ["latin-ext"] });
+import { About, Hero, Services } from "@/components";
+import { MainLayout } from "@/layouts";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`${lexend.className}`}
+      className={`${inter.className}`}
     >
-      absolute energy
+      <MainLayout>
+        <Hero />
+        <About />
+        <Services />
+      </MainLayout>
     </main>
   );
 }

@@ -10,20 +10,23 @@ module.exports = {
       backgroundImage: {
         "linear-gradient":
           "linear-gradient(38deg, rgba(205,2,238,1) 0%, rgba(0,148,255,1) 100%)",
+        "linear-gradient-blue": "linear-gradient(90deg, #0094FF 0%, #fff 100%)",
+        "radial-gradient-red":
+          "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(215,53,241,1) 50%, rgba(255,255,255,0) 100%)",
       },
       colors: {
         main: "#0094FF",
         dark: "#252F40",
       },
       fontFamily: {
-        black: 'trap-black, sans-serif',
-        extrabol: 'trap-extrabold, sans-serif',
-        bold: 'trap-bold, sans-serif',
-        semibold: 'trap-semibold, sans-serif',
-        medium: 'trap-medium, sans-serif',
-        regular: 'trap-regular, sans-serif',
-        light: 'trap-light, sans-serif'
-      }
+        trap_black: "trap-black, sans-serif",
+        trap_extrabol: "trap-extrabold, sans-serif",
+        trap_bold: "trap-bold, sans-serif",
+        trap_semibold: "trap-semibold, sans-serif",
+        trap_medium: "trap-medium, sans-serif",
+        trap_regular: "trap-regular, sans-serif",
+        trap_light: "trap-light, sans-serif",
+      },
     },
   },
   plugins: [],

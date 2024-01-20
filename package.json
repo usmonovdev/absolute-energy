@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/react-spline": "^2.2.6",
+    "framer-motion": "^10.18.0",
+    "iconoir": "^7.3.0",
+    "iconoir-react": "^7.3.0",
+    "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.1.0"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
