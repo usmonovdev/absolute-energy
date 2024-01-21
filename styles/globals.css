@@ -45,11 +45,6 @@
   font-style: normal;
 }
 
-.bg-cube {
-  background-image: linear-gradient(90deg, #fafafa0a 0.1rem, transparent 0.1rem);
-  background-size: 5rem;
-}
-
 @layer base {
   body {
     @apply m-0 p-0 box-border overflow-x-hidden;
@@ -80,4 +75,50 @@
   .text-medium {
     @apply md:text-[24px] text-[20px];
   }
+}
+
+/* comments crousel setting */
+#myCarousel .f-carousel__slide {
+  --f-carousel-spacing: 8px;
+  --f-carousel-slide-width: calc((100% - 16px) / 3);
+}
+
+@media (max-width: 996px) {
+  #myCarousel .f-carousel__slide {
+    --f-carousel-spacing: 8px;
+    --f-carousel-slide-width: calc((100% - 16px) / 2);
+  }
+}
+@media (max-width: 640px) {
+  #myCarousel .f-carousel__slide {
+    --f-carousel-spacing: 8px;
+    --f-carousel-slide-width: calc((100% - 16px) / 1);
+  }
+}
+
+.f-carousel__dots li button span,
+.f-carousel__dots .is-current button span {
+  @apply bg-linear-gradient w-[11px] h-[11px] rounded-full
+}
+
+.f-button.is-next, .f-button.is-prev {
+  @apply !bg-white/30 !rounded-full
+}
+
+.f-button svg {
+  @apply !stroke-white
+}
+
+.text-slicing {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* background lines for hero component */
+.bg-cube {
+  background-image: linear-gradient(90deg, #fafafa0a 0.1rem, transparent 0.1rem);
+  background-size: 5rem;
 }

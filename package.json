@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fancyapps/ui": "^5.0.33",
     "@splinetool/react-spline": "^2.2.6",
     "framer-motion": "^10.18.0",
     "iconoir": "^7.3.0",

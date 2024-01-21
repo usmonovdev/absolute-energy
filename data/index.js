@@ -1,4 +1,11 @@
-import { ServiceIcon1, ServiceIcon2, ServiceIcon3, ServiceIcon4, ServiceIcon5, ServiceIcon6 } from "@/icons";
+import {
+  ServiceIcon1,
+  ServiceIcon2,
+  ServiceIcon3,
+  ServiceIcon4,
+  ServiceIcon5,
+  ServiceIcon6,
+} from "@/icons";
 
 export const navbar = [
   {
@@ -171,17 +178,17 @@ export const pricing = [
     features: [
       {
         id: 1,
-        title: "Advantages #1"
+        title: "Advantages #1",
       },
       {
         id: 2,
-        title: "Advantages #2"
+        title: "Advantages #2",
       },
       {
         id: 3,
-        title: "Advantages #3"
+        title: "Advantages #3",
       },
-    ]
+    ],
   },
   {
     id: 2,
@@ -192,17 +199,17 @@ export const pricing = [
     features: [
       {
         id: 1,
-        title: "Advantages #1"
+        title: "Advantages #1",
       },
       {
         id: 2,
-        title: "Advantages #2"
+        title: "Advantages #2",
       },
       {
         id: 3,
-        title: "Advantages #3"
+        title: "Advantages #3",
       },
-    ]
+    ],
   },
   {
     id: 3,
@@ -213,16 +220,54 @@ export const pricing = [
     features: [
       {
         id: 1,
-        title: "Advantages #1"
+        title: "Advantages #1",
       },
       {
         id: 2,
-        title: "Advantages #2"
+        title: "Advantages #2",
       },
       {
         id: 3,
-        title: "Advantages #3"
+        title: "Advantages #3",
       },
-    ]
-  }
-]
+    ],
+  },
+];
+
+export const clients = [
+  {
+    id: 1,
+    photo: "/images/client.jpg",
+    comment:
+      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
+    name: "Matthew Paul",
+  },
+  {
+    id: 2,
+    photo: "/images/client.jpg",
+    comment:
+      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
+    name: "Matthew Paul",
+  },
+  {
+    id: 3,
+    photo: "/images/client.jpg",
+    comment:
+      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
+    name: "Matthew Paul",
+  },
+  {
+    id: 4,
+    photo: "/images/client.jpg",
+    comment:
+      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
+    name: "Matthew Paul",
+  },
+  {
+    id: 5,
+    photo: "/images/client.jpg",
+    comment:
+      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
+    name: "Matthew Paul",
+  },
+];

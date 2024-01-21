@@ -13,6 +13,7 @@ const index = () => {
           <motion.div
             initial={{ y: 50 }}
             whileInView={{ y: 0 }}
+            viewport={{ once: true }}
             className="w-full h-[80%] flex flex-col items-center justify-center gap-2 text-center"
           >
             <h3 className="text-small uppercase text-gradient font-bold mb-1">

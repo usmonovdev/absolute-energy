@@ -8,6 +8,8 @@ import Services from './Services'
 import Projects from './Projects'
 import Contact from './Contact'
 import Pricing from './Pricing'
+import Clients from './Clients'
+import Fancybox from './Fancybox'
 
 export {
   Navbar,
@@ -19,5 +21,7 @@ export {
   Services,
   Projects,
   Contact,
-  Pricing
+  Pricing,
+  Clients,
+  Fancybox
 }

@@ -1,4 +1,4 @@
-import { About, Contact, Hero, Pricing, Projects, Services } from "@/components";
+import { About, Clients, Contact, Hero, Pricing, Projects, Services } from "@/components";
 import { MainLayout } from "@/layouts";
 import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
@@ -15,6 +15,7 @@ export default function Home() {
         {/* <Projects /> */}
         <Contact />
         <Pricing />
+        <Clients />
       </MainLayout>
     </main>
   );
