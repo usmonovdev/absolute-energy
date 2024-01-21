@@ -45,7 +45,7 @@ const index = () => {
             <motion.li
               key={service.id}
               variants={item}
-              className="border p-3 rounded-[15px] hover:bg-[#f1f1f130] hover:border-main transition-colors duration-300"
+              className="border p-3 rounded-[15px] bg-gray-50 transition-colors duration-300"
             >
               <service.icon className={"mb-4 w-[64px] h-[64px]"} />
               <div className="flex flex-col gap-2">

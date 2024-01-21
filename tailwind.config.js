@@ -13,6 +13,8 @@ module.exports = {
         "linear-gradient-blue": "linear-gradient(90deg, #0094FF 0%, #fff 100%)",
         "radial-gradient-red":
           "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(215,53,241,1) 50%, rgba(255,255,255,0) 100%)",
+        "radial-gradient-blue":
+          "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,148,255,1) 50%, rgba(255,255,255,0) 100%)",
       },
       colors: {
         main: "#0094FF",
@@ -27,6 +29,9 @@ module.exports = {
         trap_regular: "trap-regular, sans-serif",
         trap_light: "trap-light, sans-serif",
       },
+      boxShadow: {
+        "small": "0 1px 2px 0 #1018280D"
+      }
     },
   },
   plugins: [],

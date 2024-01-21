@@ -46,10 +46,10 @@ const index = () => {
                 })}
               </ul>
               <button
-                className={`w-full px-6 py-4 border rounded-[8px] ${
+                className={`w-full px-6 py-4 border rounded-[8px] transition-colors duration-300 ${
                   price.isSupport
-                    ? "border-dark bg-dark text-white"
-                    : "border-main text-main hover:bg-main/10 transition-colors duration-300"
+                    ? "border-dark bg-dark hover:bg-violet-900 text-white"
+                    : "border-main text-white bg-main hover:bg-blue-600"
                 }`}
               >
                 {price.buttonText}

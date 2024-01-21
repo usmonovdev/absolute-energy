@@ -10,6 +10,9 @@ import Contact from './Contact'
 import Pricing from './Pricing'
 import Clients from './Clients'
 import Fancybox from './Fancybox'
+import Partners from './Partners'
+import FAQ from './FAQ'
+import FAQComponent from './FAQComponent'
 
 export {
   Navbar,
@@ -23,5 +26,8 @@ export {
   Contact,
   Pricing,
   Clients,
-  Fancybox
+  Fancybox,
+  Partners,
+  FAQ,
+  FAQComponent
 }

@@ -1,5 +1,4 @@
 import { ContainerLayout } from "@/layouts";
-import "./styles.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
@@ -133,23 +132,35 @@ const index = () => {
           <h3 className="text-small font-semibold">About us</h3>
           <div className="bg-linear-gradient-blue w-[120px] h-[2px] mt-4"></div>
           <h1 className="text-big font-bold">О компании</h1>
-          <p className="text-small text-[#9B9FA7] mb-2">
-            Компания <span className="font-medium">«ABSOLUTE ENERGY»</span>{" "}
-            основана в <span className="font-medium">2016</span> г. и является
-            официальным <br />
-          </p>
-          <p className="text-small text-[#9B9FA7]">
-            дилером торговых марок{" "}
-            <span className="font-medium">AKSA, Cummins, RID, GENPOWER</span> и
-            <span className="font-medium"> Mitsubishi</span> на территории
-            Республики Узбекистан. На сегодняшний день продукция компании широко
-            востребована в нефтегазовой отрасли, а также в сегментах
-            телекоммуникации, гостиничной и банковской системы. В компании
-            имеется достаточное количество обученных и сертифицированных
-            сервисных инженеров для оказания гарантийной после гарантийной
-            поддержки оборудования в режиме{" "}
-            <span className="font-medium">24/7</span>
-          </p>
+          <motion.div
+            initial={{
+              y: 50,
+              opacity: 0
+            }}
+            whileInView={{
+              y: 0,
+              opacity: 1
+            }}
+            viewport={{ once: true }}
+          >
+            <p className="text-small text-[#9B9FA7] mb-2">
+              Компания <span className="font-medium">«ABSOLUTE ENERGY»</span>{" "}
+              основана в <span className="font-medium">2016</span> г. и является
+              официальным <br />
+            </p>
+            <p className="text-small text-[#9B9FA7]">
+              дилером торговых марок{" "}
+              <span className="font-medium">AKSA, Cummins, RID, GENPOWER</span>{" "}
+              и<span className="font-medium"> Mitsubishi</span> на территории
+              Республики Узбекистан. На сегодняшний день продукция компании
+              широко востребована в нефтегазовой отрасли, а также в сегментах
+              телекоммуникации, гостиничной и банковской системы. В компании
+              имеется достаточное количество обученных и сертифицированных
+              сервисных инженеров для оказания гарантийной после гарантийной
+              поддержки оборудования в режиме{" "}
+              <span className="font-medium">24/7</span>
+            </p>
+          </motion.div>
           <Link href={"/about"} className="flex flex-row gap-2 mt-3 w-fit">
             <h3 className="text-[16px] text-main">Подробнее</h3>{" "}
             <svg
