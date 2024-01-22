@@ -18,6 +18,8 @@ import AboutPageHero from './AboutPageHero'
 import AboutWithPhoto from './AboutWithPhoto'
 import OurTasks from './OurTasks'
 
+import ContactPageHero from './ContactPageHero'
+
 export {
   Navbar,
   Footer,
@@ -36,5 +38,6 @@ export {
   FAQComponent,
   AboutPageHero,
   AboutWithPhoto,
-  OurTasks
+  OurTasks,
+  ContactPageHero
 }

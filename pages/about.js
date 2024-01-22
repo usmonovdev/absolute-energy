@@ -5,16 +5,14 @@ const inter = Inter({ subsets: ["latin"] });
 
 const about = () => {
   return (
-    <main
-    className={`${inter.className}`}
-    >
+    <main className={`${inter.className}`}>
       <MainLayout navUrlsColorIsBlack={true}>
         <AboutPageHero />
         <AboutWithPhoto />
         <OurTasks />
       </MainLayout>
     </main>
-  )
-}
+  );
+};
 
-export default about
+export default about;
