@@ -15,8 +15,8 @@ export const navbar = [
   },
   {
     id: 2,
-    url: "/services",
-    title: "Наши услуги",
+    url: "/contact",
+    title: "Контакт",
   },
   {
     id: 3,
@@ -33,22 +33,22 @@ export const navbar = [
 export const footer = [
   {
     id: 1,
-    name: "About",
+    name: "О компании",
     url: "/about"
   },
   {
     id: 2,
-    name: "Contact",
+    name: "Контакт",
     url: "/contact"
   },
   {
     id: 3,
-    name: "Blogs",
+    name: "Блоги",
     url: "/blogs"
   },
   {
     id: 4,
-    name: "Pricing",
+    name: "Тарифные планы",
     url: "/pricing"
   },
 ];
