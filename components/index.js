@@ -14,6 +14,10 @@ import Partners from './Partners'
 import FAQ from './FAQ'
 import FAQComponent from './FAQComponent'
 
+import AboutPageHero from './AboutPageHero'
+import AboutWithPhoto from './AboutWithPhoto'
+import OurTasks from './OurTasks'
+
 export {
   Navbar,
   Footer,
@@ -29,5 +33,8 @@ export {
   Fancybox,
   Partners,
   FAQ,
-  FAQComponent
+  FAQComponent,
+  AboutPageHero,
+  AboutWithPhoto,
+  OurTasks
 }

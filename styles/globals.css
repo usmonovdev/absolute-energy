@@ -98,15 +98,16 @@
 
 .f-carousel__dots li button span,
 .f-carousel__dots .is-current button span {
-  @apply bg-linear-gradient w-[11px] h-[11px] rounded-full
+  @apply bg-linear-gradient w-[11px] h-[11px] rounded-full;
 }
 
-.f-button.is-next, .f-button.is-prev {
-  @apply !bg-white/30 !rounded-full
+.f-button.is-next,
+.f-button.is-prev {
+  @apply !bg-white/30 !rounded-full;
 }
 
 .f-button svg {
-  @apply !stroke-white
+  @apply !stroke-white;
 }
 
 .text-slicing {
@@ -119,6 +120,30 @@
 
 /* background lines for hero component */
 .bg-cube {
-  background-image: linear-gradient(90deg, #fafafa0a 0.1rem, transparent 0.1rem);
+  background-image: linear-gradient(
+    90deg,
+    #fafafa0a 0.1rem,
+    transparent 0.1rem
+  );
   background-size: 5rem;
+}
+
+.about-photos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+}
+
+.about-photo-1 {
+  grid-area: 1 / 1 / 4 / 6;
+}
+
+.about-photo-2 {
+  grid-area: 4 / 1 / 6 / 3;
+}
+
+.about-photo-3 {
+  grid-area: 4 / 3 / 6 / 6;
 }

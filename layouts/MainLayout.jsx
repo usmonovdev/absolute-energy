@@ -1,10 +1,10 @@
 import { Footer, Navbar } from "@/components";
 import React from "react";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ children, navUrlsColorIsBlack }) => {
   return (
     <div>
-      <Navbar />
+      <Navbar urlsColorIsBlack={navUrlsColorIsBlack}/>
       {children}
       <Footer />
     </div>

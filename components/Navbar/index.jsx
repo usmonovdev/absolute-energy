@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Menu } from "iconoir-react";
 import "./styles.module.css";
 
-const index = () => {
+const index = ({ urlsColorIsBlack = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => setMenuOpen(!menuOpen);
   return (
@@ -28,13 +28,23 @@ const index = () => {
           <ul className="md:flex hidden flex-row items-center justify-between gap-3">
             {navbar.map((link) => {
               return (
-                <li key={link.id} className="text-white text-[16px]">
+                <li
+                  key={link.id}
+                  className={`${
+                    urlsColorIsBlack ? "text-dark" : "text-white"
+                  } text-[16px]`}
+                >
                   <Link href={link.url}>{link.title}</Link>
                 </li>
               );
             })}
           </ul>
-          <Menu onClick={handleClick} className="cursor-pointer md:hidden flex text-white" />
+          <Menu
+            onClick={handleClick}
+            className={`cursor-pointer md:hidden flex ${
+              urlsColorIsBlack ? "text-dark" : "text-white"
+            }`}
+          />
         </nav>
         <Mobile open={menuOpen} handleClick={handleClick} />
       </div>
