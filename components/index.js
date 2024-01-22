@@ -19,6 +19,7 @@ import AboutWithPhoto from './AboutWithPhoto'
 import OurTasks from './OurTasks'
 
 import ContactPageHero from './ContactPageHero'
+import FormContact from './FormContact'
 
 export {
   Navbar,
@@ -39,5 +40,6 @@ export {
   AboutPageHero,
   AboutWithPhoto,
   OurTasks,
-  ContactPageHero
+  ContactPageHero,
+  FormContact
 }
