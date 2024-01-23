@@ -5,7 +5,7 @@ import React from "react";
 
 const index = () => {
   return (
-    <ContainerLayout className="py-10">
+    <ContainerLayout className="py-14">
       <div className="flex min-[996px]:flex-row flex-col gap-8">
         <div className="min-[996px]:w-1/2 w-full">
           <h1 className="text-medium font-semibold">Наши задачи</h1>

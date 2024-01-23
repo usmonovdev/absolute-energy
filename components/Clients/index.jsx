@@ -25,7 +25,7 @@ const index = () => {
 
   return (
     <div className="bg-gray-100">
-      <ContainerLayout className="py-10">
+      <ContainerLayout className="py-14">
         <div className="text-center flex items-center flex-col gap-2">
           <h1 className="text-big font-bold leading-none">
             Отзывы наших{" "}

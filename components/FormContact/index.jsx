@@ -1,7 +1,7 @@
 const index = () => {
   return (
     <>
-      <form className="py-10 max-w-[700px] mx-auto w-full">
+      <form className="py-14 max-w-[700px] mx-auto w-full">
         <div className="grid grid-cols-2 gap-6">
           <div className="flex flex-col gap-4">
             <label htmlFor="full_name" className="font-bold">

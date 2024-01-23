@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const index = () => {
   return (
-    <ContainerLayout className={"py-10 sm:mt-0 mt-[150px]"}>
+    <ContainerLayout className={"py-14 sm:mt-0 mt-[150px]"}>
       <div className="flex min-[996px]:flex-row flex-col gap-4 w-full">
         <div className="relative p-6 lg:w-[35%] min-[996px]:w-[40%] w-fit mx-auto">
           {/* circle linear blue gradient */}

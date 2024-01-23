@@ -4,7 +4,7 @@ import { footer } from "@/data";
 
 const index = () => {
   return (
-    <div className="w-full py-10 bg-dark">
+    <div className="w-full py-14 bg-dark">
       <div className="custom-container text-white flex flex-col gap-5">
         <Link
           href={"/"}

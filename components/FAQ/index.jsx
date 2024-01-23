@@ -24,7 +24,7 @@ const index = () => {
     },
   };
   return (
-    <ContainerLayout className={"py-10"}>
+    <ContainerLayout className={"py-14"}>
       <div className="text-center flex items-center flex-col">
         <h1 className="text-big font-bold leading-none mt-4">
           Часто задаваемые вопросы

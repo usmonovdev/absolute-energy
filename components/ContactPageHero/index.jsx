@@ -4,13 +4,10 @@ import { Mail, Phone } from "iconoir-react";
 
 const index = () => {
   return (
-    <ContainerLayout className={"py-10 relative top-10"}>
-      <motion.div
-        initial={{ scale: 0 }}
-        whileInView={{ scale: 1 }}
-        viewport={{ once: true }}
-        transition={{ type: "spring" }}
-        className="w-full h-auto bg-[url(/images/contact-bg.png)] bg-cover bg-center rounded-xl py-12 mb-5 flex flex-col items-center justify-center text-white text-center"
+    <ContainerLayout className={"py-14 relative top-10"}>
+      <div className="bg-dark rounded-3xl overflow-hidden">
+      <div
+        className="w-full h-auto bg-[url(/images/bg.svg)] bg-cover bg-center rounded-xl py-12 flex flex-col items-center justify-center text-white text-center"
       >
         <h1 className="text-big font-extrabold">Обратная связь</h1>
         <div className="flex flex-row gap-4">
@@ -21,7 +18,8 @@ const index = () => {
             <Phone /> +998 (99) 999-99-99
           </h3>
         </div>
-      </motion.div>
+      </div>
+      </div>
     </ContainerLayout>
   );
 };

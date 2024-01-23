@@ -6,7 +6,7 @@ import { CheckCircleSolid } from "iconoir-react";
 const index = () => {
   return (
     <div id="pricing">
-      <ContainerLayout className={"py-10"}>
+      <ContainerLayout className={"py-14"}>
         <div className="text-center flex items-center flex-col">
           <h1 className="text-big font-bold leading-none mt-4">
             Тарифные планы
@@ -34,7 +34,7 @@ const index = () => {
                   </h1>
                   <h3 className="text-small">{price.desc}</h3>
                 </div>
-                <ul className="flex flex-col items-start gap-[10px] py-10">
+                <ul className="flex flex-col items-start gap-[10px] py-14">
                   {price.features.map((feature) => {
                     return (
                       <li key={feature.id} className="flex flex-row gap-4">

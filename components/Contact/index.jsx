@@ -8,7 +8,7 @@ const index = () => {
   return (
     <>
       <div className="bg-dark/90 w-full h-full z-[20] text-white">
-        <ContainerLayout className={"py-10 flex min-[996px]:flex-row flex-col md:gap-4 gap-8"}>
+        <ContainerLayout className={"py-14 flex min-[996px]:flex-row flex-col md:gap-4 gap-8"}>
           <div className="min-[996px]:w-1/2 w-full flex flex-col gap-4">
             <h1 className="text-gradient font-bold text-[36px] leading-none">
               Хотите посмотреть?
