@@ -49,7 +49,7 @@ const index = () => {
                   key={data.id}
                   className="f-carousel__slide py-5 px-3 flex flex-col items-center gap-4 rounded-2xl"
                 >
-                  <div className="p-2 bg-white rounded-lg shadow-small w-fit h-fit">
+                  <div className="p-2 w-[146px] h-[45px] bg-white rounded-lg shadow-small flex items-center justify-center">
                     <Image
                       src={data.companyLogo}
                       width={300}
