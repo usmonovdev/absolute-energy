@@ -24,7 +24,7 @@ const index = () => {
   }, []);
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-50">
       <ContainerLayout className="py-14">
         <div className="text-center flex items-center flex-col gap-2">
           <h1 className="text-big font-bold leading-none">
@@ -55,7 +55,7 @@ const index = () => {
                       width={300}
                       height={300}
                       alt={data.name}
-                      className="object-contain w-[130px] grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain w-[130px] transition-all duration-300"
                     />
                   </div>
                   <div className="max-w-[800px] mx-auto w-full">

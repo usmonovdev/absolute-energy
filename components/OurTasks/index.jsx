@@ -1,7 +1,7 @@
 import { ContainerLayout } from "@/layouts";
 import { CheckCircle } from "iconoir-react";
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
 
 const index = () => {
   return (
@@ -52,7 +52,10 @@ const index = () => {
             </ul>
           </div>
         </div>
-        <div className="min-[996px]:w-1/2 w-full grid grid-cols-2 sm:gap-10 gap-4">
+        <motion.div 
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }} className="min-[996px]:w-1/2 w-full grid grid-cols-2 sm:gap-10 gap-4">
           <Image
             src={"/images/task-1.png"}
             width={400}
@@ -67,7 +70,7 @@ const index = () => {
             alt="task photo 1"
             className="w-full object-contain"
           />
-        </div>
+        </motion.div>
       </div>
     </ContainerLayout>
   );

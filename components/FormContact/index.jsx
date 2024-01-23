@@ -11,7 +11,7 @@ const index = () => {
               type="text"
               id="full_name"
               placeholder="Введите ФИО"
-              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:border-main"
+              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:ring-2 ring-main"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -22,7 +22,7 @@ const index = () => {
               type="text"
               id="gmail"
               placeholder="example@yourmail.com"
-              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:border-main"
+              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:ring-2 ring-main"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -33,7 +33,7 @@ const index = () => {
               type="text"
               id="company"
               placeholder="Название вашей компании"
-              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:border-main"
+              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:ring-2 ring-main"
             />
           </div>
           <div className="flex flex-col gap-4">
@@ -44,7 +44,7 @@ const index = () => {
               type="text"
               id="theme"
               placeholder="Опишите вкратце"
-              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:border-main"
+              className="py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:ring-2 ring-main"
             />
           </div>
         </div>
@@ -56,7 +56,7 @@ const index = () => {
             id="message"
             placeholder="Введите текст сообщении..."
             rows={4}
-            className="max-h-[200px] min-h-[100px] w-full py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:border-main"
+            className="max-h-[200px] min-h-[100px] w-full py-4 px-6 outline-none border-gray-200 border rounded-[20px] focus:ring-2 ring-main"
           />
         </div>
         <button className="bg-dark py-4 px-8 text-white rounded-full mt-4">

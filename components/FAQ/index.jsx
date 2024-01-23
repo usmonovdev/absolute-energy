@@ -31,7 +31,7 @@ const index = () => {
         </h1>
       </div>
       <motion.ul
-        className="max-w-[700px] w-full mx-auto mt-8 flex flex-col gap-4"
+        className="max-w-[700px] w-full mx-auto mt-8 flex flex-col gap-5"
         variants={container}
         initial="hidden"
         whileInView="visible"

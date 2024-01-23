@@ -1,6 +1,5 @@
 import { statistics } from "@/data";
 import { motion } from "framer-motion";
-import "./styles.module.css";
 
 const index = () => {
   return (

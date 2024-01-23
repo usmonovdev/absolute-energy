@@ -89,12 +89,12 @@
 
 .f-carousel__dots li button span,
 .f-carousel__dots .is-current button span {
-  @apply bg-linear-gradient w-[11px] h-[11px] rounded-full;
+  @apply bg-secondary w-[11px] h-[11px] rounded-full;
 }
 
 .f-button.is-next,
 .f-button.is-prev {
-  @apply !rounded-full sm:!bg-main !bg-main/40;
+  @apply !rounded-full sm:!bg-secondary !bg-secondary/40;
 }
 
 .f-button svg {

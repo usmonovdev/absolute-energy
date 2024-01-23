@@ -4,12 +4,12 @@ import { ContainerLayout } from "@/layouts";
 
 const index = () => {
   return (
-    <div className="bg-gray-100 py-12 px-25">
+    <div className="bg-gray-50 py-12 px-25">
       <h1 className="text-small text-dark font-semibold text-center">
         НАШИ ПАРТНЁРЫ
       </h1>
       <ContainerLayout>
-        <ul className="grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 py-7 gap-3">
+        <ul className="grid lg:grid-cols-7 md:grid-cols-5 sm:grid-cols-3 grid-cols-2 py-7 gap-5">
           {partners.map((partner) => {
             return (
               <li
@@ -21,7 +21,7 @@ const index = () => {
                   width={200}
                   height={200}
                   alt="logo"
-                  className="object-contain w-full h-auto grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-contain w-full h-auto transition-all duration-300"
                 />
               </li>
             );

@@ -1,5 +1,4 @@
 import { ContainerLayout } from "@/layouts";
-import "./styles.module.css";
 import { services } from "@/data";
 import { motion } from "framer-motion";
 
@@ -32,7 +31,7 @@ const index = () => {
         </h1>
       </div>
       <motion.ul
-        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 mt-8"
+        className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-8"
         variants={container}
         initial="hidden"
         whileInView="visible"
@@ -43,10 +42,10 @@ const index = () => {
             <motion.li
               key={service.id}
               variants={item}
-              className="border p-3 rounded-[15px] bg-gray-100 transition-colors duration-300"
+              className="border p-5 rounded-[15px] bg-gray-50 transition-colors duration-300"
             >
-              <service.icon className={"mb-4 w-[64px] h-[64px]"} />
-              <div className="flex flex-col gap-2">
+              <service.icon className={"mb-5 w-[64px] h-[64px]"} />
+              <div className="flex flex-col gap-3">
                 <h1
                   className="text-small font-semibold text-dark"
                   title={service.title}

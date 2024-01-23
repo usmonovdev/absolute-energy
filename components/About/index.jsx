@@ -34,7 +34,7 @@ const index = () => {
                 y2="85.2952"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#f86c00" />
+                <stop stop-color="#dde4f0" />
                 <stop offset="1" stop-color="white" stop-opacity="0" />
               </linearGradient>
             </defs>
@@ -50,36 +50,36 @@ const index = () => {
             className="absolute right-0 -z-[1]"
           >
             <g opacity="0.2">
-              <circle cx="4" cy="4" r="4" fill="#f86c00" />
-              <circle cx="4" cy="36" r="4" fill="#f86c00" />
-              <circle cx="4" cy="68" r="4" fill="#f86c00" />
-              <circle cx="4" cy="100" r="4" fill="#f86c00" />
-              <circle cx="4" cy="132" r="4" fill="#f86c00" />
-              <circle cx="36" cy="4" r="4" fill="#f86c00" />
-              <circle cx="36" cy="36" r="4" fill="#f86c00" />
-              <circle cx="36" cy="68" r="4" fill="#f86c00" />
-              <circle cx="36" cy="100" r="4" fill="#f86c00" />
-              <circle cx="36" cy="132" r="4" fill="#f86c00" />
-              <circle cx="68" cy="4" r="4" fill="#f86c00" />
-              <circle cx="68" cy="36" r="4" fill="#f86c00" />
-              <circle cx="68" cy="68" r="4" fill="#f86c00" />
-              <circle cx="68" cy="100" r="4" fill="#f86c00" />
-              <circle cx="68" cy="132" r="4" fill="#f86c00" />
-              <circle cx="100" cy="4" r="4" fill="#f86c00" />
-              <circle cx="164" cy="4" r="4" fill="#f86c00" />
-              <circle cx="100" cy="36" r="4" fill="#f86c00" />
-              <circle cx="164" cy="36" r="4" fill="#f86c00" />
-              <circle cx="100" cy="68" r="4" fill="#f86c00" />
-              <circle cx="164" cy="68" r="4" fill="#f86c00" />
-              <circle cx="100" cy="100" r="4" fill="#f86c00" />
-              <circle cx="164" cy="100" r="4" fill="#f86c00" />
-              <circle cx="100" cy="132" r="4" fill="#f86c00" />
-              <circle cx="164" cy="132" r="4" fill="#f86c00" />
-              <circle cx="132" cy="4" r="4" fill="#f86c00" />
-              <circle cx="132" cy="36" r="4" fill="#f86c00" />
-              <circle cx="132" cy="68" r="4" fill="#f86c00" />
-              <circle cx="132" cy="100" r="4" fill="#f86c00" />
-              <circle cx="132" cy="132" r="4" fill="#f86c00" />
+              <circle cx="4" cy="4" r="4" fill="#607d8b" />
+              <circle cx="4" cy="36" r="4" fill="#607d8b" />
+              <circle cx="4" cy="68" r="4" fill="#607d8b" />
+              <circle cx="4" cy="100" r="4" fill="#607d8b" />
+              <circle cx="4" cy="132" r="4" fill="#607d8b" />
+              <circle cx="36" cy="4" r="4" fill="#607d8b" />
+              <circle cx="36" cy="36" r="4" fill="#607d8b" />
+              <circle cx="36" cy="68" r="4" fill="#607d8b" />
+              <circle cx="36" cy="100" r="4" fill="#607d8b" />
+              <circle cx="36" cy="132" r="4" fill="#607d8b" />
+              <circle cx="68" cy="4" r="4" fill="#607d8b" />
+              <circle cx="68" cy="36" r="4" fill="#607d8b" />
+              <circle cx="68" cy="68" r="4" fill="#607d8b" />
+              <circle cx="68" cy="100" r="4" fill="#607d8b" />
+              <circle cx="68" cy="132" r="4" fill="#607d8b" />
+              <circle cx="100" cy="4" r="4" fill="#607d8b" />
+              <circle cx="164" cy="4" r="4" fill="#607d8b" />
+              <circle cx="100" cy="36" r="4" fill="#607d8b" />
+              <circle cx="164" cy="36" r="4" fill="#607d8b" />
+              <circle cx="100" cy="68" r="4" fill="#607d8b" />
+              <circle cx="164" cy="68" r="4" fill="#607d8b" />
+              <circle cx="100" cy="100" r="4" fill="#607d8b" />
+              <circle cx="164" cy="100" r="4" fill="#607d8b" />
+              <circle cx="100" cy="132" r="4" fill="#607d8b" />
+              <circle cx="164" cy="132" r="4" fill="#607d8b" />
+              <circle cx="132" cy="4" r="4" fill="#607d8b" />
+              <circle cx="132" cy="36" r="4" fill="#607d8b" />
+              <circle cx="132" cy="68" r="4" fill="#607d8b" />
+              <circle cx="132" cy="100" r="4" fill="#607d8b" />
+              <circle cx="132" cy="132" r="4" fill="#607d8b" />
             </g>
           </svg>
 
@@ -122,14 +122,14 @@ const index = () => {
                 y2="179"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#f86c00" />
+                <stop stop-color="#dde4f0" />
                 <stop offset="1" stop-color="white" stop-opacity="0" />
               </linearGradient>
             </defs>
           </svg>
         </div>
         <div className="lg:w-[65%] min-[996px]:w-[60%] w-full">
-          <h1 className="text-big font-bold">О компании</h1>
+          <h1 className="text-big font-bold mb-3">О компании</h1>
           <motion.div
             initial={{
               y: 50,
@@ -141,7 +141,7 @@ const index = () => {
             }}
             viewport={{ once: true }}
           >
-            <p className="text-small text-[#9B9FA7] mb-2">
+            <p className="text-small text-[#9B9FA7] mb-3">
               Компания <span className="font-medium">«ABSOLUTE ENERGY»</span>{" "}
               основана в <span className="font-medium">2016</span> г. и является
               официальным <br />
@@ -159,7 +159,7 @@ const index = () => {
               <span className="font-medium">24/7</span>
             </p>
           </motion.div>
-          <Link href={"/about"} className="flex flex-row gap-2 mt-3 w-fit">
+          <Link href={"/about"} className="flex flex-row gap-2 mt-4 w-fit">
             <h3 className="text-[16px] text-main">Подробнее</h3>{" "}
             <svg
               width="24"

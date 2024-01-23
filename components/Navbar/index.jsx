@@ -1,10 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import Mobile from "./Mobile";
 import { navbar } from "@/data";
 import { useState } from "react";
 import { Menu } from "iconoir-react";
-import "./styles.module.css";
 
 const index = ({ urlsColorIsBlack = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);

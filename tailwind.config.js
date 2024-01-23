@@ -18,7 +18,8 @@ module.exports = {
       },
       colors: {
         main: "#f86c00",
-        dark: "#130500",
+        secondary: "#607d8b",
+        dark: "#1e272b",
       },
       fontFamily: {
         trap_black: "trap-black, sans-serif",

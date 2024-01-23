@@ -113,7 +113,7 @@ export const services = [
 export const pricing = [
   {
     id: 1,
-    price: "$10/mth",
+    price: "$10",
     name: "Базовый план",
     desc: "Счет выставляется ежегодно.",
     isSupport: false,
@@ -139,7 +139,7 @@ export const pricing = [
   },
   {
     id: 2,
-    price: "$20/mth",
+    price: "$20",
     name: "Бизнес-план",
     desc: "Счет выставляется ежегодно.",
     isSupport: true,
@@ -165,11 +165,11 @@ export const pricing = [
   },
   {
     id: 3,
-    price: "$40/mth",
+    price: "$40",
     name: "Корпоративный план",
     desc: "Счет выставляется ежегодно.",
     isSupport: false,
-    buttonText: "Find a Room",
+    buttonText: "Learn more",
     features: [
       {
         id: 1,

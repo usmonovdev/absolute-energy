@@ -1,13 +1,16 @@
 import { ContainerLayout } from "@/layouts";
 import Image from "next/image";
-import React from "react";
+import { motion } from "framer-motion";
 
 const index = () => {
   return (
     <ContainerLayout className={"py-14"}>
       <div className="flex min-[996px]:flex-row flex-col-reverse gap-8">
         <div className="min-[996px]:w-1/2 w-full about-photos">
-          <div className="about-photo-1">
+          <motion.div className="about-photo-1" 
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}>
             <Image
               src={"/images/admin.png"}
               width={400}
@@ -15,14 +18,30 @@ const index = () => {
               className="object-cover w-full h-full rounded-3xl"
               alt="admin"
             />
-          </div>
-          <div className="about-photo-2">
+          </motion.div>
+          <motion.div
+            className="about-photo-2"
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+          >
             <div className="w-full h-full bg-[#5956E9] text-white text-center rounded-3xl flex flex-col items-center justify-center gap-[10px] px-3 py-12">
-              <h1 className="sm:text-[40px] text-[20px] font-bold leading-none">500 K</h1>
-              <h3 className="sm:text-[16px] text-[14px] capitalize">Daily active users</h3>
+              <h1 className="sm:text-[40px] text-[20px] font-bold leading-none">
+                500 K
+              </h1>
+              <h3 className="sm:text-[16px] text-[14px] capitalize">
+                Daily active users
+              </h3>
             </div>
-          </div>
-          <div className="about-photo-3">
+          </motion.div>
+          <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="about-photo-3"
+          >
             <Image
               src={"/images/team.png"}
               width={400}
@@ -30,7 +49,7 @@ const index = () => {
               className="object-cover w-full h-full rounded-3xl"
               alt="team"
             />
-          </div>
+          </motion.div>
         </div>
         <div className="min-[996px]:w-1/2 w-full">
           <h1 className="text-medium font-semibold">О компании</h1>
