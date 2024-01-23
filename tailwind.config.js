@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "linear-gradient":
-          "linear-gradient(38deg, rgba(205,2,238,1) 0%, rgba(0,148,255,1) 100%)",
+          "linear-gradient(38deg, #f86c00 0%, #f83e00 100%)",
         "linear-gradient-blue": "linear-gradient(90deg, #0094FF 0%, #fff 100%)",
         "radial-gradient-red":
           "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(215,53,241,1) 50%, rgba(255,255,255,0) 100%)",
@@ -17,8 +17,8 @@ module.exports = {
           "linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,148,255,1) 50%, rgba(255,255,255,0) 100%)",
       },
       colors: {
-        main: "#0094FF",
-        dark: "#252F40",
+        main: "#f86c00",
+        dark: "#130500",
       },
       fontFamily: {
         trap_black: "trap-black, sans-serif",

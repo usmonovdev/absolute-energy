@@ -10,13 +10,6 @@ const index = () => {
           href={"/"}
           className="font-trap_bold flex flex-row items-center gap-2"
         >
-          <Image
-            src={"/images/logo.png"}
-            width={40}
-            height={40}
-            alt="logo"
-            className="object-contain"
-          />
           <h1 className="text-medium text-gradient">ABSOLUTE ENERGY</h1>
         </Link>
         <ul className="flex flex-row gap-4">
@@ -36,17 +29,17 @@ const index = () => {
           <ul className="flex flex-row gap-4">
             <li>
               <Link href={"/"} className="text-small opacity-30">
-                Terms
+                Условия
               </Link>
             </li>
             <li>
               <Link href={"/"} className="text-small opacity-30">
-                Privacy
+                Конфиденциальность
               </Link>
             </li>
             <li>
               <Link href={"/"} className="text-small opacity-30">
-                Cookies
+                Cоокиес
               </Link>
             </li>
           </ul>

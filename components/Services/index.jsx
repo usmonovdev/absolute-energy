@@ -27,8 +27,6 @@ const index = () => {
   return (
     <ContainerLayout className={"py-10"}>
       <div className="text-center flex items-center flex-col">
-        <h3 className="text-small font-semibold">Main Services</h3>
-        <div className="bg-radial-gradient-red w-[120px] h-[2px] mt-4"></div>
         <h1 className="text-big font-bold leading-none mt-4">
           Основные направления
         </h1>
@@ -45,7 +43,7 @@ const index = () => {
             <motion.li
               key={service.id}
               variants={item}
-              className="border p-3 rounded-[15px] bg-gray-50 transition-colors duration-300"
+              className="border p-3 rounded-[15px] bg-gray-100 transition-colors duration-300"
             >
               <service.icon className={"mb-4 w-[64px] h-[64px]"} />
               <div className="flex flex-col gap-2">
@@ -55,7 +53,7 @@ const index = () => {
                 >
                   {service.title}
                 </h1>
-                <h3 className="text-small text-[#9B9FA7]" title={service.desc}>
+                <h3 className="text-small text-[#9B9FA7] text-slicing" title={service.desc}>
                   {service.desc}
                 </h3>
               </div>

@@ -26,8 +26,6 @@ const index = () => {
   return (
     <ContainerLayout className={"py-10"}>
       <div className="text-center flex items-center flex-col">
-        <h3 className="text-small font-semibold">FAQ's</h3>
-        <div className="bg-radial-gradient-blue w-[120px] h-[2px] mt-4"></div>
         <h1 className="text-big font-bold leading-none mt-4">
           Часто задаваемые вопросы
         </h1>

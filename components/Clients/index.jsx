@@ -14,7 +14,7 @@ const index = () => {
 
     const customOptions = {
       Dots: true,
-      Navigation: true
+      Navigation: true,
     };
     const myCarousel = new Carousel(carouselElement, customOptions);
 
@@ -24,55 +24,65 @@ const index = () => {
   }, []);
 
   return (
-    <ContainerLayout className="py-10">
-      <div className="text-left flex items-start flex-col gap-2">
-        <h1 className="text-big font-bold leading-none">
-          Отзывы наших <span className="text-gradient">довольных клиентов</span>
-        </h1>
-        <h3 className="text-small">
-          Several selected clients, who already believe in our service.
-        </h3>
-      </div>
-      <Fancybox
-        options={{
-          Carousel: {
-            infinite: false,
-          },
-        }}
-      >
-        <motion.ul
-          className={`f-carousel mt-6`} id={"myCarousel"}
-          initial={{ y: 50, opacity: 1 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          viewport={{ once: true }}  
+    <div className="bg-gray-100">
+      <ContainerLayout className="py-10">
+        <div className="text-center flex items-center flex-col gap-2">
+          <h1 className="text-big font-bold leading-none">
+            Отзывы наших{" "}
+            <span className="text-gradient">довольных клиентов</span>
+          </h1>
+        </div>
+        <Fancybox
+          options={{
+            Carousel: {
+              infinite: false,
+            },
+          }}
         >
-          {clients.map((data, i) => {
-            return (
-              <li
-                key={data.id}
-                className="f-carousel__slide py-5 px-3 flex flex-row rounded-2xl overflow-hidden relative"
-              >
-                <div className="w-fit h-fit absolute bottom-0 left-0 p-3">
-                  <div className="p-4 bg-white/20 backdrop-blur rounded-lg text-white">
-                    <h3 className="text-small font-medium text-slicing" title={data.comment}>{data.comment}</h3>
-                    <p className="text-small mt-2">- {data.name}</p>
+          <motion.ul
+            className={`f-carousel mt-10`}
+            id={"myCarousel"}
+            initial={{ y: 50, opacity: 1 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+          >
+            {clients.map((data, i) => {
+              return (
+                <li
+                  key={data.id}
+                  className="f-carousel__slide py-5 px-3 flex flex-col items-center gap-4 rounded-2xl relative"
+                >
+                  <div className="p-2 bg-white rounded-lg shadow-small">
+                    <Image
+                      src={data.companyLogo}
+                      width={300}
+                      height={300}
+                      alt={data.name}
+                      className="cobject-contain w-[130px] grayscale hover:grayscale-0 transition-all duration-300"
+                    />
                   </div>
-                </div>
-                <div className="w-full h-full">
-                  <Image
-                    src={data.photo}
-                    width={300}
-                    height={300}
-                    alt={data.name}
-                    className="w-full h-full"
-                  />
-                </div>
-              </li>
-            );
-          })}
-        </motion.ul>
-      </Fancybox>
-    </ContainerLayout>
+                  <div className="max-w-[800px] mx-auto w-full">
+                    <h1 className="text-center text-small font-medium">
+                      {data.comment}
+                    </h1>
+                  </div>
+                  <div className="w-[70px] h-[70px] rounded-full">
+                    <Image
+                      src={data.photo}
+                      width={300}
+                      height={300}
+                      alt={data.name}
+                      className="w-full h-full rounded-full"
+                    />
+                  </div>
+                  <h3 className="text-small">{data.name}</h3>
+                </li>
+              );
+            })}
+          </motion.ul>
+        </Fancybox>
+      </ContainerLayout>
+    </div>
   );
 };
 

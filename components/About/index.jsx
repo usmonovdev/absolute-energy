@@ -34,7 +34,7 @@ const index = () => {
                 y2="85.2952"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#B0DEFF" />
+                <stop stop-color="#f86c00" />
                 <stop offset="1" stop-color="white" stop-opacity="0" />
               </linearGradient>
             </defs>
@@ -50,36 +50,36 @@ const index = () => {
             className="absolute right-0 -z-[1]"
           >
             <g opacity="0.2">
-              <circle cx="4" cy="4" r="4" fill="#0094FF" />
-              <circle cx="4" cy="36" r="4" fill="#0094FF" />
-              <circle cx="4" cy="68" r="4" fill="#0094FF" />
-              <circle cx="4" cy="100" r="4" fill="#0094FF" />
-              <circle cx="4" cy="132" r="4" fill="#0094FF" />
-              <circle cx="36" cy="4" r="4" fill="#0094FF" />
-              <circle cx="36" cy="36" r="4" fill="#0094FF" />
-              <circle cx="36" cy="68" r="4" fill="#0094FF" />
-              <circle cx="36" cy="100" r="4" fill="#0094FF" />
-              <circle cx="36" cy="132" r="4" fill="#0094FF" />
-              <circle cx="68" cy="4" r="4" fill="#0094FF" />
-              <circle cx="68" cy="36" r="4" fill="#0094FF" />
-              <circle cx="68" cy="68" r="4" fill="#0094FF" />
-              <circle cx="68" cy="100" r="4" fill="#0094FF" />
-              <circle cx="68" cy="132" r="4" fill="#0094FF" />
-              <circle cx="100" cy="4" r="4" fill="#0094FF" />
-              <circle cx="164" cy="4" r="4" fill="#0094FF" />
-              <circle cx="100" cy="36" r="4" fill="#0094FF" />
-              <circle cx="164" cy="36" r="4" fill="#0094FF" />
-              <circle cx="100" cy="68" r="4" fill="#0094FF" />
-              <circle cx="164" cy="68" r="4" fill="#0094FF" />
-              <circle cx="100" cy="100" r="4" fill="#0094FF" />
-              <circle cx="164" cy="100" r="4" fill="#0094FF" />
-              <circle cx="100" cy="132" r="4" fill="#0094FF" />
-              <circle cx="164" cy="132" r="4" fill="#0094FF" />
-              <circle cx="132" cy="4" r="4" fill="#0094FF" />
-              <circle cx="132" cy="36" r="4" fill="#0094FF" />
-              <circle cx="132" cy="68" r="4" fill="#0094FF" />
-              <circle cx="132" cy="100" r="4" fill="#0094FF" />
-              <circle cx="132" cy="132" r="4" fill="#0094FF" />
+              <circle cx="4" cy="4" r="4" fill="#f86c00" />
+              <circle cx="4" cy="36" r="4" fill="#f86c00" />
+              <circle cx="4" cy="68" r="4" fill="#f86c00" />
+              <circle cx="4" cy="100" r="4" fill="#f86c00" />
+              <circle cx="4" cy="132" r="4" fill="#f86c00" />
+              <circle cx="36" cy="4" r="4" fill="#f86c00" />
+              <circle cx="36" cy="36" r="4" fill="#f86c00" />
+              <circle cx="36" cy="68" r="4" fill="#f86c00" />
+              <circle cx="36" cy="100" r="4" fill="#f86c00" />
+              <circle cx="36" cy="132" r="4" fill="#f86c00" />
+              <circle cx="68" cy="4" r="4" fill="#f86c00" />
+              <circle cx="68" cy="36" r="4" fill="#f86c00" />
+              <circle cx="68" cy="68" r="4" fill="#f86c00" />
+              <circle cx="68" cy="100" r="4" fill="#f86c00" />
+              <circle cx="68" cy="132" r="4" fill="#f86c00" />
+              <circle cx="100" cy="4" r="4" fill="#f86c00" />
+              <circle cx="164" cy="4" r="4" fill="#f86c00" />
+              <circle cx="100" cy="36" r="4" fill="#f86c00" />
+              <circle cx="164" cy="36" r="4" fill="#f86c00" />
+              <circle cx="100" cy="68" r="4" fill="#f86c00" />
+              <circle cx="164" cy="68" r="4" fill="#f86c00" />
+              <circle cx="100" cy="100" r="4" fill="#f86c00" />
+              <circle cx="164" cy="100" r="4" fill="#f86c00" />
+              <circle cx="100" cy="132" r="4" fill="#f86c00" />
+              <circle cx="164" cy="132" r="4" fill="#f86c00" />
+              <circle cx="132" cy="4" r="4" fill="#f86c00" />
+              <circle cx="132" cy="36" r="4" fill="#f86c00" />
+              <circle cx="132" cy="68" r="4" fill="#f86c00" />
+              <circle cx="132" cy="100" r="4" fill="#f86c00" />
+              <circle cx="132" cy="132" r="4" fill="#f86c00" />
             </g>
           </svg>
 
@@ -122,15 +122,13 @@ const index = () => {
                 y2="179"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stop-color="#FAE6FD" />
+                <stop stop-color="#f86c00" />
                 <stop offset="1" stop-color="white" stop-opacity="0" />
               </linearGradient>
             </defs>
           </svg>
         </div>
         <div className="lg:w-[65%] min-[996px]:w-[60%] w-full">
-          <h3 className="text-small font-semibold">About us</h3>
-          <div className="bg-linear-gradient-blue w-[120px] h-[2px] mt-4"></div>
           <h1 className="text-big font-bold">О компании</h1>
           <motion.div
             initial={{
@@ -172,7 +170,7 @@ const index = () => {
             >
               <path
                 d="M14.4301 5.93005L20.5001 12.0001L14.4301 18.0701"
-                stroke="#0094FF"
+                stroke="#f86c00"
                 stroke-width="1.5"
                 stroke-miterlimit="10"
                 stroke-linecap="round"
@@ -180,7 +178,7 @@ const index = () => {
               />
               <path
                 d="M11.01 12H20.33"
-                stroke="#0094FF"
+                stroke="#f86c00"
                 stroke-width="1.5"
                 stroke-miterlimit="10"
                 stroke-linecap="round"
@@ -188,7 +186,7 @@ const index = () => {
               />
               <path
                 d="M3.5 12H6.97"
-                stroke="#0094FF"
+                stroke="#f86c00"
                 stroke-width="1.5"
                 stroke-miterlimit="10"
                 stroke-linecap="round"

@@ -14,13 +14,6 @@ const index = ({ urlsColorIsBlack = false }) => {
       <div className="custom-container">
         <nav className="relative flex flex-row justify-between items-center py-6 px-3 rounded-2xl">
           <div className="flex flex-row items-center gap-2">
-            {/* <Image
-              src={"/images/logo.png"}
-              width={40}
-              height={40}
-              alt="logo"
-              className="object-contain"
-            /> */}
             <Link href={"/"} className="text-gradient font-trap_bold">
               ABSOLUTE ENERGY
             </Link>

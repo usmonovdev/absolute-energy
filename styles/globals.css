@@ -80,20 +80,11 @@
 /* comments crousel setting */
 #myCarousel .f-carousel__slide {
   --f-carousel-spacing: 8px;
-  --f-carousel-slide-width: calc((100% - 16px) / 3);
+  --f-carousel-slide-width: calc((100% - 16px) / 1);
 }
 
-@media (max-width: 996px) {
-  #myCarousel .f-carousel__slide {
-    --f-carousel-spacing: 8px;
-    --f-carousel-slide-width: calc((100% - 16px) / 2);
-  }
-}
-@media (max-width: 640px) {
-  #myCarousel .f-carousel__slide {
-    --f-carousel-spacing: 8px;
-    --f-carousel-slide-width: calc((100% - 16px) / 1);
-  }
+#myCarousel .f-carousel__viewport {
+  @apply py-5
 }
 
 .f-carousel__dots li button span,
@@ -103,7 +94,7 @@
 
 .f-button.is-next,
 .f-button.is-prev {
-  @apply !bg-white/30 !rounded-full;
+  @apply !bg-main !rounded-full;
 }
 
 .f-button svg {

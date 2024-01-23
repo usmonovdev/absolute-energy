@@ -6,7 +6,7 @@ const index = () => {
   const inputStyles =
     "px-[20px] py-[12px] w-full bg-white/20 outline-none rounded-[12px] focus:ring-[1px] ring-white";
   return (
-    <div className="relative w-full h-fit bg-[linear-gradient(180deg,rgba(36,43,51,1)10%,rgba(36,43,51,0)50%,rgba(36,43,51,1)90%)]">
+    <>
       <div className="bg-dark/90 w-full h-full z-[20] text-white">
         <ContainerLayout className={"py-10 flex min-[996px]:flex-row flex-col md:gap-4 gap-8"}>
           <div className="min-[996px]:w-1/2 w-full flex flex-col gap-4">
@@ -50,8 +50,7 @@ const index = () => {
           </div>
         </ContainerLayout>
       </div>
-      <div className="bg-[url(/images/sean-pollock.jpg)] w-full h-full bg-clip-content bg-cover absolute top-0 z-[-1]"></div>
-    </div>
+    </>
   );
 };
 

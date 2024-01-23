@@ -5,17 +5,23 @@ import { MinusCircle, PlusCircle } from "iconoir-react";
 const FAQComponent = ({ question, answer }) => {
   const [isOpen, setISOpen] = useState(false);
   return (
-    <div className={`bg-gray-50 p-4 rounded-lg`}>
+    <div className={`bg-gray-100 p-4 rounded-lg`}>
       <div
-        className={`${isOpen && "mb-3 font-semibold"} flex flex-row gap-3 cursor-pointer`}
+        className={`${
+          isOpen && "mb-3 font-semibold"
+        } flex flex-row gap-3 cursor-pointer`}
         onClick={() => setISOpen(!isOpen)}
       >
-        {isOpen ? (
-          <MinusCircle className="opacity-30" />
-        ) : (
-          <PlusCircle className="opacity-30" />
-        )}
-        <h1 className="text-small">{question}</h1>
+        <div className="w-[5%]">
+          {isOpen ? (
+            <MinusCircle className="opacity-30" />
+          ) : (
+            <PlusCircle className="opacity-30" />
+          )}
+        </div>
+        <div className="w-[95%]">
+          <h1 className="text-small">{question}</h1>
+        </div>
       </div>
       <AnimatePresence>
         {isOpen && (

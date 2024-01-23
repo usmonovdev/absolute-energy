@@ -11,12 +11,12 @@ export default function Home() {
       <MainLayout>
         <Hero />
         <About />
+        <Partners />
         <Services />
         {/* <Projects /> */}
         <Contact />
         <Pricing />
         <Clients />
-        <Partners />
         <FAQ />
       </MainLayout>
     </main>

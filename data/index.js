@@ -49,7 +49,7 @@ export const footer = [
   {
     id: 4,
     name: "Тарифные планы",
-    url: "/pricing"
+    url: "#pricing"
   },
 ];
 
@@ -57,17 +57,17 @@ export const statistics = [
   {
     id: 1,
     number: 70,
-    title: "Lorem ispum",
+    title: "Лорем испум",
   },
   {
     id: 2,
     number: 15,
-    title: "Lorem ispum",
+    title: "Лорем испум",
   },
   {
     id: 3,
     number: 4,
-    title: "Lorem ispum",
+    title: "Лорем испум",
   },
 ];
 
@@ -75,37 +75,37 @@ export const services = [
   {
     id: 1,
     title: "Проектирование малой и средней мощности",
-    desc: "Phasellus suspendisse non, convallis quam aliquet volutpat. Netus cras quam orc.",
+    desc: "Малая и средняя мощность играют важную роль в современной энергетике и технике. Проектирование систем средней мощности требует специализированных знаний и опыта, чтобы эффективно использовать ресурсы и обеспечивать устойчивую энергетическую производительность.",
     icon: ServiceIcon1,
   },
   {
     id: 2,
     title: "План расположения оборудований и кабелей",
-    desc: "Diam eu, mauris, in amet viverra. Eget ut scelerisque eget nibh ut quis.",
+    desc: "Планирование расположения оборудования и кабелей является ключевым этапом в процессе разработки инфраструктуры.",
     icon: ServiceIcon2,
   },
   {
     id: 3,
     title: "Подготовка документации по дизельной электро-станции",
-    desc: "Velit, rutrum a cursus eleifend egestas.",
+    desc: "Подготовка документации по дизельной электро-станции - это неотъемлемый этап в создании и эксплуатации данного энергетического объекта.",
     icon: ServiceIcon3,
   },
   {
     id: 4,
     title: "Расчет мощности электроустановок",
-    desc: "Расчеты и планы питающих сетей,  расчет электрических щитов,  расчет нагрузки,  планы заземления контура.",
+    desc: "Расчет мощности электроустановок - важный этап в проектировании и эксплуатации энергетических систем. Этот процесс направлен на определение необходимой электрической мощности, обеспечивающей эффективное функционирование установки в соответствии с требованиями и стандартами.",
     icon: ServiceIcon4,
   },
   {
     id: 5,
     title: "Система снабжение топливом",
-    desc: "Tellus rhoncus enim nisl et lorem in sed. Congue nunc est habitant quam lectus neque.",
+    desc: "Система снабжения топливом представляет собой ключевой компонент в инфраструктуре, обеспечивающей поступление топлива для различных видов энергетических установок.",
     icon: ServiceIcon5,
   },
   {
     id: 6,
     title: "Система автоматизации и пожарной безопасности",
-    desc: "Pretium sodales vitae id gravida tempor. Erat adipiscing orci turpis fames nunc, id diam.",
+    desc: "Система автоматизации и пожарной безопасности представляет собой комплексное решение, обеспечивающее эффективное управление процессами и защиту от возможных пожаров.",
     icon: ServiceIcon6,
   },
 ];
@@ -113,64 +113,79 @@ export const services = [
 export const pricing = [
   {
     id: 1,
-    name: "Service plan #1",
-    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    price: "$10/mth",
+    name: "Базовый план",
+    desc: "Счет выставляется ежегодно.",
     isSupport: false,
     buttonText: "Learn more",
     features: [
       {
         id: 1,
-        title: "Advantages #1",
+        title: "Доступ ко всем основным функциям",
       },
       {
         id: 2,
-        title: "Advantages #2",
+        title: "Базовая отчетность и аналитика",
       },
       {
         id: 3,
-        title: "Advantages #3",
+        title: "До 10 пользователей",
+      },
+      {
+        id: 4,
+        title: "20 ГБ индивидуальных данных",
       },
     ],
   },
   {
     id: 2,
-    name: "Service plan #2",
-    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    price: "$20/mth",
+    name: "Бизнес-план",
+    desc: "Счет выставляется ежегодно.",
     isSupport: true,
     buttonText: "Learn more",
     features: [
       {
         id: 1,
-        title: "Advantages #1",
+        title: "Более 200 интеграций",
       },
       {
         id: 2,
-        title: "Advantages #2",
+        title: "Расширенная отчетность",
       },
       {
         id: 3,
-        title: "Advantages #3",
+        title: "До 20 пользователей",
+      },
+      {
+        id: 4,
+        title: "40 ГБ индивидуальных данных",
       },
     ],
   },
   {
     id: 3,
-    name: "Service plan #3",
-    desc: "Lorem Ipsum - это текст-'рыба', часто используемый в печати и вэб-дизайне",
+    price: "$40/mth",
+    name: "Корпоративный план",
+    desc: "Счет выставляется ежегодно.",
     isSupport: false,
     buttonText: "Find a Room",
     features: [
       {
         id: 1,
-        title: "Advantages #1",
+        title: "Расширенные поля",
       },
       {
         id: 2,
-        title: "Advantages #2",
+        title: "Журнал история данных",
       },
       {
         id: 3,
-        title: "Advantages #3",
+        title: "Неограниченное пользователей",
+      },
+      {
+        id: 4,
+        title: "Неограниченное пользователей",
       },
     ],
   },
@@ -179,39 +194,36 @@ export const pricing = [
 export const clients = [
   {
     id: 1,
-    photo: "/images/client.jpg",
+    photo: "/images/client-1.jpg",
     comment:
-      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-    name: "Matthew Paul",
+      "Отличный выбор генераторов на этом сайте! Я заказала здесь свой генератор, и качество обслуживания меня приятно удивило. Быстрая обработка заказа и оперативная доставка. Спасибо за профессионализм!",
+    name: "Елена Смирнова",
+    companyLogo: "/images/partners/3.png"
   },
   {
     id: 2,
-    photo: "/images/client.jpg",
+    photo: "/images/client-2.jpg",
     comment:
-      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-    name: "Matthew Paul",
+      "Сайт очень удобный в использовании. Нашел здесь подробную информацию о генераторах, что помогло мне сделать правильный выбор. Обслуживание клиентов на высшем уровне. Рекомендую!",
+    name: "Александр Иванов",
+    companyLogo: "/images/partners/1.png"
   },
   {
     id: 3,
-    photo: "/images/client.jpg",
+    photo: "/images/client-3.jpg",
     comment:
-      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-    name: "Matthew Paul",
+      "Заказала генератор для загородного дома на этом сайте. Процесс покупки был легким и прозрачным. Генератор пришел в указанные сроки, и работает отлично. Благодарю за отличное обслуживание!",
+    name: "Ольга Козлова",
+    companyLogo: "/images/partners/2.png"
   },
   {
     id: 4,
-    photo: "/images/client.jpg",
+    photo: "/images/client-4.jpg",
     comment:
-      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-    name: "Matthew Paul",
-  },
-  {
-    id: 5,
-    photo: "/images/client.jpg",
-    comment:
-      "Perfect, very good job! Thank you for the amazing design and work. Really impressed with the high quality and quick turnaround time. Highly recommend.",
-    name: "Matthew Paul",
-  },
+      "Очень удовлетворен работой сайта. Внимательные менеджеры, готовые помочь в любой ситуации. Генератор, который я заказал, полностью соответствует моим ожиданиям. Большое спасибо за отличный сервис!",
+    name: "Дмитрий Николаев",
+    companyLogo: "/images/partners/6.png"
+  }
 ];
 
 export const partners = [
@@ -248,26 +260,32 @@ export const partners = [
 export const faqs = [
   {
     id: 1,
-    question: "You asked, we answered!",
+    question: "Как начать покупку генератора на вашем сайте?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo lorem Ipsum is simply dummy text of the printing and typesetting.",
+      "Перейдите на главную страницу и нажмите кнопку 'Купить'. Затем следуйте инструкциям для оформления заказа и введите необходимую информацию.",
   },
   {
     id: 2,
-    question: "You asked, we answered!",
+    question: "Чем отличаются различные типы генераторов, представленные на вашем сайте?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo lorem Ipsum is simply dummy text of the printing and typesetting.",
+      "Наши генераторы различаются по мощности, типу топлива, размеру и дополнительным функциям. Вы можете выбрать оптимальный вариант в зависимости от ваших потребностей.",
   },
   {
     id: 3,
-    question: "You asked, we answered!",
+    question: "Каковы условия гарантии на ваши генераторы?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo lorem Ipsum is simply dummy text of the printing and typesetting.",
+      "Мы предоставляем гарантию на все наши генераторы в течение определенного периода времени. Пожалуйста, ознакомьтесь с разделом 'Гарантия' для получения подробной информации.",
   },
   {
     id: 4,
-    question: "You asked, we answered!",
+    question: "Какие методы оплаты вы принимаете?",
     answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo lorem Ipsum is simply dummy text of the printing and typesetting.",
+      "Мы принимаем различные методы оплаты, включая банковские карты, электронные платежи и другие удобные варианты. Все подробности указаны на странице оформления заказа.",
+  },
+  {
+    id: 5,
+    question: "Каковы сроки доставки генератора?",
+    answer:
+      "Сроки доставки зависят от вашего местоположения. После оформления заказа вы получите подробную информацию о времени доставки.",
   },
 ];

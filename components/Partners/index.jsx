@@ -5,7 +5,7 @@ import React from "react";
 
 const index = () => {
   return (
-    <div className="bg-gray-50 py-12 px-25">
+    <div className="bg-gray-100 py-12 px-25">
       <h1 className="text-small text-dark font-semibold text-center">
         НАШИ ПАРТНЁРЫ
       </h1>
@@ -22,7 +22,7 @@ const index = () => {
                   width={200}
                   height={200}
                   alt="logo"
-                  className="object-cover w-fit h-auto"
+                  className="object-cover w-fit h-auto grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </li>
             );
