@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { clients } from "@/data";
 import { Fancybox } from "..";
 import { ContainerLayout } from "@/layouts";
-import { motion } from "framer-motion";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import "@fancyapps/ui/dist/carousel/carousel.css";
 
@@ -15,6 +14,7 @@ const index = () => {
     const customOptions = {
       Dots: true,
       Navigation: true,
+      AdaptiveHeight: true
     };
     const myCarousel = new Carousel(carouselElement, customOptions);
 
@@ -39,26 +39,23 @@ const index = () => {
             },
           }}
         >
-          <motion.ul
+          <ul
             className={`f-carousel mt-10`}
             id={"myCarousel"}
-            initial={{ y: 50, opacity: 1 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            viewport={{ once: true }}
           >
             {clients.map((data, i) => {
               return (
                 <li
                   key={data.id}
-                  className="f-carousel__slide py-5 px-3 flex flex-col items-center gap-4 rounded-2xl relative"
+                  className="f-carousel__slide py-5 px-3 flex flex-col items-center gap-4 rounded-2xl"
                 >
-                  <div className="p-2 bg-white rounded-lg shadow-small">
+                  <div className="p-2 bg-white rounded-lg shadow-small w-fit h-fit">
                     <Image
                       src={data.companyLogo}
                       width={300}
                       height={300}
                       alt={data.name}
-                      className="cobject-contain w-[130px] grayscale hover:grayscale-0 transition-all duration-300"
+                      className="object-contain w-[130px] grayscale hover:grayscale-0 transition-all duration-300"
                     />
                   </div>
                   <div className="max-w-[800px] mx-auto w-full">
@@ -79,7 +76,7 @@ const index = () => {
                 </li>
               );
             })}
-          </motion.ul>
+          </ul>
         </Fancybox>
       </ContainerLayout>
     </div>

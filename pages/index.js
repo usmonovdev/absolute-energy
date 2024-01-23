@@ -8,7 +8,7 @@ export default function Home() {
     <main
       className={`${inter.className}`}
     >
-      <MainLayout>
+      <MainLayout navUrlsColorIsBlack={true}>
         <Hero />
         <About />
         <Partners />

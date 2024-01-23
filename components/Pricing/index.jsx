@@ -44,7 +44,7 @@ const index = () => {
                         }`}
                       /> */}
                         <CheckCircleSolid />
-                        <h3>{feature.title}</h3>
+                        <h3 className="text-small text-start">{feature.title}</h3>
                       </li>
                     );
                   })}

@@ -12,7 +12,7 @@ const index = () => {
         >
           <h1 className="text-medium text-gradient">ABSOLUTE ENERGY</h1>
         </Link>
-        <ul className="flex flex-row gap-4">
+        <ul className="flex sm:flex-row flex-col sm:gap-4 gap-2">
           {footer.map((link) => {
             return (
               <li key={link.id} className="text-small">

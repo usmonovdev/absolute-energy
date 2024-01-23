@@ -94,7 +94,7 @@
 
 .f-button.is-next,
 .f-button.is-prev {
-  @apply !bg-main !rounded-full;
+  @apply !rounded-full sm:!bg-main !bg-main/40;
 }
 
 .f-button svg {

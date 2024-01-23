@@ -1,7 +1,6 @@
+import Image from "next/image";
 import { partners } from "@/data";
 import { ContainerLayout } from "@/layouts";
-import Image from "next/image";
-import React from "react";
 
 const index = () => {
   return (
@@ -15,14 +14,14 @@ const index = () => {
             return (
               <li
                 key={partner.id}
-                className="p-2 bg-white rounded-lg flex items-center justify-center shadow-small"
+                className="sm:p-2 p-4 bg-white rounded-lg flex items-center justify-center shadow-small"
               >
                 <Image
                   src={partner.logo}
                   width={200}
                   height={200}
                   alt="logo"
-                  className="object-cover w-fit h-auto grayscale hover:grayscale-0 transition-all duration-300"
+                  className="object-contain w-full h-auto grayscale hover:grayscale-0 transition-all duration-300"
                 />
               </li>
             );

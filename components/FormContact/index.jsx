@@ -1,8 +1,8 @@
 const index = () => {
   return (
     <>
-      <form className="py-14 max-w-[700px] mx-auto w-full">
-        <div className="grid grid-cols-2 gap-6">
+      <form className="py-14 max-w-[700px] px-4 mx-auto w-full">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
           <div className="flex flex-col gap-4">
             <label htmlFor="full_name" className="font-bold">
               ФИО *
