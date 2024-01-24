@@ -3,10 +3,12 @@ import Mobile from "./Mobile";
 import { navbar } from "@/data";
 import { useState } from "react";
 import { Menu } from "iconoir-react";
+import { useRouter } from "next/router";
 
 const index = ({ urlsColorIsBlack = false }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const handleClick = () => setMenuOpen(!menuOpen);
+  const router = useRouter();
   return (
     <header className="w-full z-[1000] absolute">
       <div className="custom-container">
@@ -23,7 +25,9 @@ const index = ({ urlsColorIsBlack = false }) => {
                   key={link.id}
                   className={`${
                     urlsColorIsBlack ? "text-dark" : "text-white"
-                  } text-[16px]`}
+                  } ${
+                    router.pathname == link.url ? "underline" : ""
+                  } text-[16px] hover:text-main transition-all duration-200`}
                 >
                   <Link href={link.url}>{link.title}</Link>
                 </li>

@@ -289,3 +289,22 @@ export const faqs = [
       "Сроки доставки зависят от вашего местоположения. После оформления заказа вы получите подробную информацию о времени доставки.",
   },
 ];
+
+export const generators = [
+  {
+    id: 1,
+    photo: "/images/alimator.png"
+  },
+  {
+    id: 2,
+    photo: "/images/generator.png"
+  },
+  {
+    id: 3,
+    photo: "/images/generator-1.png"
+  },
+  // {
+  //   id: 4,
+  //   photo: "/images/generator-4.png"
+  // },
+]

@@ -30,7 +30,7 @@ const index = () => {
                 и собирая электрогенераторы высокого качества, эффективные и
                 долговечные.
               </motion.h1>
-              <Link href={"/contact"}>
+              <Link href={"/contact"} className="w-fit">
                 <button className="py-4 px-10 text-white w-fit rounded-full font-medium bg-main hover:bg-orange-700 transition-colors text-small duration-300 flex flex-row gap-3">
                   <Phone className="fill-white"/>
                   Контакт

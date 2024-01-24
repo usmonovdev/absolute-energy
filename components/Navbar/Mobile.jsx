@@ -1,9 +1,11 @@
+import Link from "next/link";
 import { navbar } from "@/data";
 import { AnimatePresence, motion } from "framer-motion";
 import { Xmark } from "iconoir-react";
-import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Mobile = ({ open, handleClick }) => {
+  const router = useRouter();
   return (
     <>
       <AnimatePresence>
@@ -32,7 +34,12 @@ const Mobile = ({ open, handleClick }) => {
               <ul className="w-full flex flex-col mt-4">
                 {navbar.map((link) => {
                   return (
-                    <li key={link.id} className="py-2 px-3 hover:bg-dark/10">
+                    <li
+                      key={link.id}
+                      className={`py-2 px-3 hover:bg-dark/10 ${
+                        router.pathname == link.url ? "underline" : ""
+                      }`}
+                    >
                       <Link href={link.url}>{link.title}</Link>
                     </li>
                   );

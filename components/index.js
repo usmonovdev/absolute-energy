@@ -13,6 +13,7 @@ import Fancybox from './Fancybox'
 import Partners from './Partners'
 import FAQ from './FAQ'
 import FAQComponent from './FAQComponent'
+import UsedGenerators from './UsedGenerators'
 
 import AboutPageHero from './AboutPageHero'
 import AboutWithPhoto from './AboutWithPhoto'
@@ -41,5 +42,6 @@ export {
   AboutWithPhoto,
   OurTasks,
   ContactPageHero,
-  FormContact
+  FormContact,
+  UsedGenerators
 }
