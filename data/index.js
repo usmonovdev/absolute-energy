@@ -308,3 +308,121 @@ export const generators = [
   //   photo: "/images/generator-4.png"
   // },
 ]
+
+export const projects = [
+  {
+    id: 1,
+    name: "Tashkent City Hilton Hotel and Congress center",
+    photo: "/images/projects/1.jpg",
+    numberInfos: [
+      {
+        id: 1,
+        title: "2 x 2250 kVA",
+      },
+      {
+        id: 2,
+        title: "2 x 2000kVA",
+      },
+      {
+        id: 3,
+        title: "4 x 1675 kVA",
+      },
+      {
+        id: 4,
+        title: "ATS for 4 units of generators",
+      },
+    ]
+  },
+  {
+    id: 2,
+    name: "Tashkent City Hilton Hotel and Congress center",
+    photo: "/images/projects/1.jpg",
+    numberInfos: [
+      {
+        id: 1,
+        title: "2 x 2250 kVA",
+      },
+      {
+        id: 2,
+        title: "2 x 2000kVA",
+      },
+      {
+        id: 3,
+        title: "4 x 1675 kVA",
+      },
+      {
+        id: 4,
+        title: "ATS for 4 units of generators",
+      },
+    ]
+  },
+  {
+    id: 3,
+    name: "Tashkent City Hilton Hotel and Congress center",
+    photo: "/images/projects/1.jpg",
+    numberInfos: [
+      {
+        id: 1,
+        title: "2 x 2250 kVA",
+      },
+      {
+        id: 2,
+        title: "2 x 2000kVA",
+      },
+      {
+        id: 3,
+        title: "4 x 1675 kVA",
+      },
+      {
+        id: 4,
+        title: "ATS for 4 units of generators",
+      },
+    ]
+  },
+  {
+    id: 4,
+    name: "Tashkent City Hilton Hotel and Congress center",
+    photo: "/images/projects/1.jpg",
+    numberInfos: [
+      {
+        id: 1,
+        title: "2 x 2250 kVA",
+      },
+      {
+        id: 2,
+        title: "2 x 2000kVA",
+      },
+      {
+        id: 3,
+        title: "4 x 1675 kVA",
+      },
+      {
+        id: 4,
+        title: "ATS for 4 units of generators",
+      },
+    ]
+  },
+  {
+    id: 4,
+    name: "Tashkent City Hilton Hotel and Congress center",
+    photo: "/images/projects/1.jpg",
+    numberInfos: [
+      {
+        id: 1,
+        title: "2 x 2250 kVA",
+      },
+      {
+        id: 2,
+        title: "2 x 2000kVA",
+      },
+      {
+        id: 3,
+        title: "4 x 1675 kVA",
+      },
+      {
+        id: 4,
+        title: "ATS for 4 units of generators",
+      },
+    ]
+  },
+]

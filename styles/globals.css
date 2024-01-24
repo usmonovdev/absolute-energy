@@ -84,7 +84,7 @@
 }
 
 #myCarousel .f-carousel__viewport {
-  @apply py-5
+  @apply py-5;
 }
 
 .f-carousel__dots li button span,
@@ -137,4 +137,31 @@
 
 .about-photo-3 {
   grid-area: 4 / 3 / 6 / 6;
+}
+
+/* projects carousel */
+#projectsCarousel {
+  --f-carousel-slide-width: calc((100% - (20px * 3)) / 2);
+  --f-carousel-spacing: 20px;
+}
+
+#projectsCarousel .f-carousel__slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  opacity: var(--f-progress, 1);
+  transform: scale(var(--f-scale, 1));
+}
+
+@media screen and (max-width: 768px) {
+  #projectsCarousel {
+    --f-carousel-slide-width: calc((100% - (20px * 2)) / 2);
+    --f-carousel-spacing: 20px;
+  }
+}
+
+.special-label {
+  @apply hidden
 }

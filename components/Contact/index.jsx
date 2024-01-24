@@ -1,4 +1,5 @@
 import { ContainerLayout } from "@/layouts";
+import PhoneInput from "react-phone-input-2";
 
 const index = () => {
   const inputStyles =
@@ -32,10 +33,14 @@ const index = () => {
               </h3>
             </div>
             <div className="w-full flex flex-col gap-6">
-              <input
-                type="text"
-                className={`${inputStyles}`}
+              <PhoneInput
+                enableSearch
+                country={"uz"}
+                name="phone"
+                containerClass="h-fit"
+                inputClass={`${inputStyles}`}
                 placeholder="Ваш телефон"
+                value={""}
               />
               <button className="py-[12px] px-[20px] bg-linear-gradient rounded-[12px] w-full">
                 Посмотреть район
