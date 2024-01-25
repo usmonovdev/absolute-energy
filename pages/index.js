@@ -14,7 +14,7 @@ export default function Home() {
         <Partners />
         <UsedGenerators />
         <Services />
-        {/* <Projects /> */}
+        <Projects />
         <Contact />
         <Pricing />
         <Clients />

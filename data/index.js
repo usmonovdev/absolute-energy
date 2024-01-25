@@ -403,7 +403,7 @@ export const projects = [
     ]
   },
   {
-    id: 4,
+    id: 5,
     name: "Tashkent City Hilton Hotel and Congress center",
     photo: "/images/projects/1.jpg",
     numberInfos: [

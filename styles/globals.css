@@ -109,6 +109,14 @@
   overflow: hidden;
 }
 
+.project-info {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 /* background lines for hero component */
 .bg-cube {
   background-image: linear-gradient(
@@ -157,7 +165,7 @@
 
 @media screen and (max-width: 768px) {
   #projectsCarousel {
-    --f-carousel-slide-width: calc((100% - (20px * 2)) / 2);
+    --f-carousel-slide-width: calc((100% - (20px * 2)) / 1);
     --f-carousel-spacing: 20px;
   }
 }
