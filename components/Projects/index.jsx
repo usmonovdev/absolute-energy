@@ -106,8 +106,10 @@ const index = () => {
                       alt={project.name}
                       className="w-full h-[300px] object-cover rounded-[15px] hover:scale-[1.05] transition-transform duration-300"
                     />
-                    <div className="absolute bottom-0 p-3 bg-gradient-to-t from-dark">
-                      <h3 className="text-small text-white project-info">{project.name}</h3>
+                    <div className="pointer-events-none absolute bottom-0 p-3 bg-gradient-to-t from-dark">
+                      <h3 className="text-small text-white project-info">
+                        {project.name}
+                      </h3>
                     </div>
                   </li>
                 );
